@@ -1,0 +1,158 @@
+/* Membuat gambar lebih besar saat di-hover */
+.zoom-image:hover {
+  transform: scale(1.1);
+}
+/* Membuat gambar membesar di dalam div saat di-hover */
+.zoom-container {
+  overflow: hidden; /* Membatasi gambar agar tetap di dalam div */
+}
+
+.zoom-image {
+  transition: transform 0.3s ease; /* Animasi smooth saat gambar diperbesar */
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.1); /* Efek memperbesar gambar */
+}
+.svg-container {
+  width: 100%;
+  overflow: hidden;
+}
+/* CSS untuk mengatur SVG agar menyatu */
+.wave {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.svg-container {
+  background-color: #ffffff !important; /* Atur background menjadi putih dan abaikan gaya Tailwind */
+}
+
+.wave {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff; /* Pastikan background SVG juga putih */
+}
+
+/* size font buat section-section*/
+.title-large {
+  font-size: 4.5rem; /* Default untuk layar besar hero section */
+  font-weight: bold;
+  text-align: center;
+}
+
+.subtitle-large {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Responsif untuk ukuran tablet (768px ke bawah) */
+@media (max-width: 768px) {
+  .title-large {
+    font-size: 2rem; /* Lebih kecil pada tablet */
+  }
+
+  .subtitle-large {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Responsif untuk ukuran ponsel (640px ke bawah) */
+@media (max-width: 640px) {
+  .title-large {
+    font-size: 1.8rem; /* Lebih kecil pada ponsel */
+  }
+
+  .subtitle-large {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.78rem;
+  }
+}
+
+/* Responsif untuk layar kecil (425px ke bawah) */
+@media (max-width: 425px) {
+  .title-large {
+    font-size: 1.5rem;
+  }
+
+  .subtitle-large {
+    font-size: 1.3rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.78rem;
+  }
+}
+
+/* typewriter/text mengetik*/
+/* Responsif: Untuk layar besar */
+@media (min-width: 1280px) {
+  #typewriter {
+    font-size: 2rem; /* Ukuran font untuk layar besar */
+  }
+}
+
+/* Responsif: Untuk layar medium */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  #typewriter {
+    font-size: 2.5rem; /* Ukuran font untuk tablet dan layar medium */
+  }
+}
+
+/* Responsif: Untuk layar kecil */
+@media (max-width: 1023px) {
+  #typewriter {
+    font-size: 1.8rem; /* Ukuran font untuk layar kecil seperti tablet vertikal */
+  }
+}
+
+/* Responsif: Untuk layar ekstra kecil */
+@media (max-width: 640px) {
+  #typewriter {
+    font-size: 1.5rem; /* Ukuran font untuk ponsel */
+  }
+}
+
+/* Responsif: Untuk layar ponsel sangat kecil */
+@media (max-width: 480px) {
+  #typewriter {
+    font-size: 1rem; /* Ukuran font untuk ponsel dengan layar kecil */
+  }
+}
